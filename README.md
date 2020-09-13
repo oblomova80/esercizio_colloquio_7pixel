@@ -1,0 +1,1 @@
+# esercizio_colloquio_7pixel
