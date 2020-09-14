@@ -29,10 +29,9 @@ class TestAdd(unittest.TestCase):
 
     def test_4(self):
         """
-        Test 4: non ci sono interi con il loro opposto, dovrebbe restituire 0
+        Test 4: fuori da range, dovrebbe restituire una eccezione
         """
-        result = esercizio([-7,-1,8,7,9,-9])
-        self.assertEqual(result, 7)
+        with self.assertRaises(Exception): esercizio([-7,-1,8,7,9,-100001])
 
 if __name__ == '__main__':
     unittest.main()
